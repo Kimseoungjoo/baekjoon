@@ -1,0 +1,29 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class baekjoon_2480 {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		
+		a = (int)(Math.random() * 6) + 1; 
+		b = (int)(Math.random() * 6) + 1; 
+		c = (int)(Math.random() * 6) + 1; 
+		if(processMeth(a,b,c)) {
+			
+		}
+		
+	}
+	public static int processMeth(int a, int b, int c) {
+		if(a == b) {
+			return a;
+		}else if(a == c) {
+			return a;
+		}else if (b == c){
+			return b;
+		}
+		return 0;
+	}
+
+}

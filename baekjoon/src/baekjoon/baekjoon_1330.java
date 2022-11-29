@@ -1,0 +1,27 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class baekjoon_1330 {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("A 값 입력 >> ");
+		a = sc.nextInt();
+		
+		System.out.println("B 값 입력 >> ");
+		b = sc.nextInt();
+		
+		System.out.println("C 값 입력 >> ");
+		c = sc.nextInt();
+		processMeth(a,b,c);
+		
+	}
+	public static void processMeth(int a, int b, int c) {
+		System.out.println((a+b)%c+"\n"+((a%c) + (b%c))%c+"\n"+(a*b)%c+"\n"+ (((a%c)*(b%c))%c) );
+	}
+
+}
